@@ -39,9 +39,9 @@ html {
 }
 
 .navbar ul li a:hover {
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px black;
 }
 
 /* Home Section */
@@ -85,14 +85,6 @@ html {
     margin: 40px 0px;
 }
 
-.btn {
-    padding: 10px 35px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    outline: none;
-    transition: .6s ease;
-}
 
 .btn:hover {
     cursor: pointer;
@@ -151,6 +143,40 @@ html {
     margin: 10px;
 }
 
+/* typewriter animation*/
+.head {
+    border-right: solid 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.head {
+    animation: animated-text 5s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(250, 249, 252, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
 /* Services Section */
 #services {
     display: flex;
@@ -176,7 +202,7 @@ html {
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50%);
+    background: linear-gradient(to top, #733835 50%, white 50%);
     background-size: 100% 200%;
     transition: all .8s;
 }
@@ -185,7 +211,7 @@ html {
     background-position: left bottom;
     color: white;
     border: none;
-    box-shadow: 0 0 20px rgb(255, 45, 45);
+    box-shadow: 0 0 20px #733835;
 }
 
 .box img {
