@@ -49,7 +49,7 @@ html {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, .5);
-    height: 840px;
+    height: 842px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -138,10 +138,24 @@ html {
 }
 
 .gallery img {
-    width: 360px;
+    width: 350px;
     height: 240px;
     margin: 10px;
+    box-shadow: 0 0 10px black;
 }
+
+.gallery-2 img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.gallery-3 img {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+}
+
 
 /* typewriter animation*/
 .head {
